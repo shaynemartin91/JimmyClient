@@ -1,3 +1,5 @@
+"use strict";
+
 const request = require('request').defaults({
     headers: {
         Accept: 'application/json',

@@ -1,3 +1,5 @@
+"use strict";
+
 const RequestHelper = require('./RequestHelper'); 
 const Order = require('./Order');
 const Location = require('./Location');

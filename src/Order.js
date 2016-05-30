@@ -1,3 +1,5 @@
+"use strict";
+
 const RequestHelper = require('./RequestHelper'); 
 
 class Order {
