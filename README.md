@@ -19,8 +19,8 @@ const orderDetails = {
     ScheduleTime: 'ASAP'
 };
 
-//You must do this before you can access certain endpoints like menus and menu items.
-JimmyClient.Order.start().then(order => {
+//You must do this before you can access certain endpoints like menus and menu items. These are required properties.
+JimmyClient.Order.start(orderDetails).then(order => {
     //Order is now available
 });
 ```
