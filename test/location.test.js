@@ -6,7 +6,6 @@ const expect = chai.expect;
 const chaiAsPromised = require('chai-as-promised');
 chai.use(chaiAsPromised);
 
-
 describe('Locations', function(){
     describe('#getById(id)', function(){
         
