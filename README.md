@@ -27,7 +27,7 @@ JimmyClient.Order.start(orderDetails).then(order => {
 
 # Usage
 
-Orders are session based so you don't need to track an order object. Changes made or to your session's current order.
+Orders are session based so you don't need to track an order object. Changes made are to your session's current order.
 
 ## Locations
 
@@ -147,3 +147,38 @@ JimmyClient.Location.getById(locationId).then(response => {
 });
 ```
 
+## Orders
+
+The `Order` endpoint allows top-level order manipulations.
+
+**Starting an order**
+
+Some functions require to have an order started before accesing them (e.g. the menu endpoints). In any case, you will need to start the order eventually.
+
+```js
+const orderDetails = {
+    locationId: 0000,
+    OrderType: JimmyClient.Order.OrderType.DELIVERY,
+    ScheduleTime: 'ASAP'
+};
+
+//You must do this before you can access certain endpoints like menus and menu items. These are required properties.
+JimmyClient.Order.start(orderDetails).then(order => {
+    //Order is now available
+});
+``` 
+
+---
+
+**Setting order delivery address**
+
+```js
+//See delivery location lookup for details about what the address should look like
+const orderAddress = {
+    ...
+};
+
+JimmyClient.Order.setDeliveryAddress(orderAddress).then(order => {
+    //order should be accessable here.
+});
+```
