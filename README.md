@@ -1,6 +1,11 @@
 # JimmyClient
 A node client for placing an order at your nearest Jimmy Johns!
 
+# ⚠️ Deprecated ⚠️
+
+This project is archived and no longer maintained ererf 
+
+
 ***DISCLAIMER***: This client was built by inspecting web traffic while ordering Jimmy John's online. This is not endorsed by Jimmy Johns nor is their API publicly documented - this means the client could potentially malfunction based on changes made to the Jimmy John's API. Please use carefully and be respectful of Jimmy John's site - don't issue large numbers of requests!
 
 # Installation
